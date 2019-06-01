@@ -10,34 +10,57 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <style>
-
-.bg-10{
-  position: relative;
-
+.bg-7{
+background-color: white;
+color: black; 
+    padding-top: 50px;
+    padding-bottom: 50px;
+	margin: 50px;
 }
-.image {
-  display: block;
+html {
+  box-sizing: border-box;
 }
 
-.overlay {
-  position: absolute; 
-  bottom: 0; 
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5); /* Black see-through */
-  color: #f1f1f1; 
-  width: 400;
-  transition: .5s ease;
-  opacity:0;
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column1 {
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 50px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  color: grey;
+}
+
+.button{
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
   color: white;
-  font-size: 20px;
-  padding: 20px;
+  background-color: #000;
   text-align: center;
+  cursor: pointer;
+  width: 32%;
 }
-
-.container:hover .overlay {
-  opacity: 1;
+.button:hover {
+  background-color: #555;
 }
-
 
 
 .navbar {
@@ -272,16 +295,16 @@ transition-duration: 0.4s;
 	<h4>MANAGEMENT TEAM</h4>
  </div>
  </div> <div class="container-fluid bg-2 text-center">
-    <img src="green2.jpg" class="img responsive" style="display:inline" alt="structure" width="100%">
+    <img src="green.jpg" class="img responsive" style="display:inline" alt="structure" width="100%">
  </div>
  
   <div class="container-fluid bg-3 text-center">
   <h2><strong>OUR MANAGEMENT</strong></h2>
-  <P>SOONSU, an eco-friendly cosmetics company started to run its business with four co-founder since April, 2019. 
-  <br>내<br>
-  용<br>
-  추<br>
-  가</P>
+  <br>
+  <P><strong>SOONSU</strong>, an eco-friendly cosmetics company started to run its business with four co-founder since April, 2019. 
+  <br><strong>SOONSU</strong> is consist of FIVE major divisons: marketing and sale, R&D, customer service, sustainability and <strong>SOONSU</strong> China.<br>
+  Each division cooperate with open-minded and tries to improve quality of product and cutomer's satisfaction.<br>
+  They are always keeping <strong>SOONSU</strong>'s vision and principles in mind. </P>
  </div>
   <div class="container-fluid bg-5 text-center">
   <h2><strong>ORGANIZATION STRUCTURE</strong></h2>
@@ -295,11 +318,11 @@ transition-duration: 0.4s;
     <div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">MARKETING&SALE</a>
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">MARKETING and SALE</a>
         </h4>
       </div>
       <div id="collapse1" class="panel-collapse collapse in">
-        <div class="panel-body">Director of Marketing and sales is SUNGJOONG KIM.
+        <div class="panel-body">Director of Marketing and sales is SUNGJOONG KIM. The sales and marketing division sets individual sales rep quotas, as well as the overall volume goal for the company. To achieve sales goals, it creates bonus and commissions structures. The division uses past sales figures and expert projections to estimate which products will sell where and in what amounts.  
 		</div>
       </div>
     </div>
@@ -310,7 +333,7 @@ transition-duration: 0.4s;
         </h4>
       </div>
       <div id="collapse2" class="panel-collapse collapse">
-        <div class="panel-body">Director of R&D is Haein Kim.</div>
+        <div class="panel-body">Director of R&D is Haein Kim. <strong>Soonsu</strong>'s R&D division is in charge of how to make our products with keeping our 5 principles. Water is commonly used as the first (majority) ingredient in most skin, hair, and body products. Instead of water, <strong>Soonsu</strong> uses beneficial organic floral hydrosols, organic aloe juice, organic fermented rice water (sake) and organic teas. It's also common to use thickeners to expand / add volume to economize formulas but <strong>Soonsu</strong> formulas are never diluted with cheap fillers. Every ingredient in each <strong>Soonsu</strong> formula is included for its benefit.</div>
       </div>
     </div>
     <div class="panel panel-default">
@@ -320,11 +343,12 @@ transition-duration: 0.4s;
         </h4>
       </div>
       <div id="collapse3" class="panel-collapse collapse">
-        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-      </div>
+        <div class="panel-body">Director of customer service is Gildong Hong. If you have any problem with you purchase, please contact us through via email or website.<br>
+      Tel: +82 10-3847-4347
+	  <br>Email: 4customer@soonsu.com
+	  </div>
 	</div>  
+	</div>
 	<div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
@@ -332,11 +356,10 @@ transition-duration: 0.4s;
         </h4>
       </div>
       <div id="collapse4" class="panel-collapse collapse">
-        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+        <div class="panel-body">Director of sustainability division is Jisung Jung. With respond to growing concern of  enviornment, <strong>Soonsu</strong> are trying hard to acheive SDGs from UN. We are committed to minimizing our carbon footprint in all areas of our business. This is illustrated in how we develop our products (biodegradable formulas) how we package (recycled/ recyclable packaging, biodegradable packing material from corn starch), how we print (non toxic and soy inks), and even how we landscape (drought resistant plants watered from the condensation collected from our roof). Our 8 acre headquarter property is 100% solar powered, and we extend this emphasis on sustainability to every aspect of <strong>Soonsu</strong>.
       </div>
-	</div>  
+	</div>
+   </div>	
 	<div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
@@ -344,71 +367,78 @@ transition-duration: 0.4s;
         </h4>
       </div>
       <div id="collapse5" class="panel-collapse collapse">
-        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+        <div class="panel-body">Director of <strong>Soonsu</strong> China is Hyeyun Son. Considerable sales of <strong>Soonsu</strong> are come from China. It become important to fulfill needs of Chinese customers. We manage various legal problem in this division as well. We cooperate with other division to develop new, trendy products for Chinese customer.</div>
       </div>
     </div>  
   </div> 
 </div>
   
  
- 
- 
- 
- 
- 
- 
+  <br>
+ <br>
  <br>
  <div class="container-fluid bg-8 text-center">
   <h2><strong>OUR LEADERSHIP</strong></h2>
  </div> 
- <br>
- <br>
-<!--IMG--> 
-<div class="container-fluid bg-6 text-center">
-     <div class="row">
-	 <div class="col-md-3 ">
-	 </div>
-      <div class="col-md-4">
-	    <div class="container bg-10 text-center">
-            <a href="mgmt1.html"><img src="joy.jpg" alt="Avatar" class="image" width="300" height="300"></a>
-            <div class="overlay">SUNGJOONG KIM</div>
-	   		
-        </div>
-	  </div>
-      <div class="col-md-4">
-	    <div class="container bg-10 text-center">
-            <a href="mgmt2.html"><img src="sadness.jpg" alt="Avatar" class="image" width="300" height="300"></a>
-            <div class="overlay">HAEIN KIM</div>	   		
-        </div>
-	  </div>
-	 <div class="col-md-1">
-	 </div>
-	 </div>
-</div>
 
  <!--img--> 
-<div class="container-fluid bg-6 text-center">
-     <div class="row">
-	 <div class="col-md-3 ">
-	 </div>
-      <div class="col-md-4">
-	    <div class="container bg-10 text-center">
-            <a href="mgmt3.html"><img src="anger.png" alt="Avatar" class="image" width="300" height="300"></a>
-            <div class="overlay">HYEYUN SON</div>	   		
-        </div>
-	  </div>
-      <div class="col-md-4">
-	    <div class="container bg-10 text-center">
-            <a href="mgmt4.html"><img src="disgust.png" alt="Avatar" class="image" width="300" height="300"></a>
-            <div class="overlay">JISUNG JEONG</div>	   		
-        </div>
-	  </div>
-	 <div class="col-md-1">
-	 </div>
-	 </div>
+<div class="bg-7">
+<div class="row">
+  <div class="column1">
+    <div class="card">
+      <img src="joy.jpg" alt="kim" style="width:100%">
+      <div class="container">
+        <h2>Sungjoong Kim</h2>
+        <p class="title">Co-founder</p>
+        <p>Director of Marketing and sale</p>
+		 <p><a href="mgmt1.html"><button class="button">More info</button></a></p>      
+
+      </div>
+    </div>
+  </div>
+
+  <div class="column1">
+    <div class="card">
+      <img src="sadness.jpg" alt="kim" style="width:100%">
+      <div class="container">
+        <h2>Haein Kim</h2>
+        <p class="title">Co-founder</p>
+        <p>Director of R&D</p>
+				 <p><a href="mgmt2.html"><button class="button">More info</button></a></p>  
+      </div>
+    </div>
+  </div>
+  <div class="column1">
+    <div class="card">
+      <img src="anger.png" alt="son" style="width:100%">
+      <div class="container">
+        <h2>Hyeyun Son</h2>
+        <p class="title">Co-founder</p>
+        <p>Director of Soonsu China</p>
+				 <p><a href="mgmt3.html"><button class="button">More info</button></a></p>  
+    </div>
+  </div>
 </div>
+  <div class="column1">
+    <div class="card">
+      <img src="disgust.png" alt="Jung" style="width:100%">
+      <div class="container">
+        <h2>Jisung Jung</h2>
+        <p class="title">Co-founder</p>
+        <p>Director of Sustainability division</p>
+				 <p><a href="mgmt4.html"><button class="button">More info</button></a></p>  
+		</div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="container-fluid bg-7 text-center">
+      <a href="https://www.instagram.com"><img src="instagram.png" class="img responsive" style="display:inline" alt="image" width="30" height="30"></a>
+	  <a href="https://www.facebook.com"><img src="facebook.png" class="img responsive" style="display:inline" alt="image" width="30" height="30"></a>
+	  <a href="https://www.youtube.com"><img src="youtube.png" class="img responsive" style="display:inline" alt="image" width="30" height="30"></a>
+</div>
+
+
    <!-- FOOTER -->
 <div class="footer" align=center>
 	Pure shopping experience in SoonSu<br><br><br><br><br><br><br>
