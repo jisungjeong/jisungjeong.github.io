@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<HTML lang="en">
 <html>
-<head> 
-<title>SoonSu</title>
-<meta charset="utf=8">
-<meta name="view point" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<head>
+  <title>Natural Beauty Products | SoonSu</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <style>
+
+ <style>
   .bg-1 {
   background-color: white;
   color: black;
@@ -25,25 +25,41 @@ color : black;
 background-color : white;
 color : black;
 }
+
+
+
 .navbar {
   padding-top: 3px;
   padding-bottom: 3px;
   border: 0;
   border-radius: 0;
  margin-bottom: 0;
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 5px;
+      z-index: 999;
+      width: 100%;
 }
+
+.navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    z-index: 999;
+}
+
 
 .navbar-nav li a:hover {
   color: black !important;
+  z-index: 999;
 } 
   body {
     font: 20px "Montserrat", sans-serif;
     line-height: 1.8;
     color: #f5f6f7;
+
   }
   p {font-size: 16px;}
+
   .margin {margin-bottom: 45px;}
  
  .breadcrumb{
@@ -60,6 +76,13 @@ color : black;
   text-align: center;
   }
   
+  a:link {
+  color: black;
+}
+
+a:hover {
+  color: hotpink;
+}
   
   .bg-5 { 
   border: 1px solid black;
@@ -73,7 +96,7 @@ background : white;
   .button1 {
   background-color: black; 
   color: white; 
-  width : 200px;
+  width : 300px;
    font: 20px "Montserrat";
 }
 
@@ -85,7 +108,7 @@ background : white;
 .button2 {
   background-color: black; 
   color: white; 
-  width : 200px;
+  width : 300px;
    font: 20px "Montserrat"
   }
 
@@ -96,7 +119,7 @@ background : white;
 .button3 {
   background-color: black; 
   color: white; 
-    width : 200px; 
+    width : 300px; 
 	 font: 20px "Montserrat";
 }
 
@@ -107,7 +130,7 @@ background : white;
 .button4 {
   background-color: black; 
   color: white;   
-    width : 200px;
+    width : 300px;
 	 font: 20px "Montserrat";
 }
 
@@ -122,42 +145,116 @@ margin : 20px;
 border : 2px solid : black;
 }
 
+.bg-8{
+color : black ;
+padding : 20px;
+margin : 20px;
+border : 2px solid : black;
+}
+.bg-10 {
+color : black ;
+padding : 20px;
+margin : 20px;
+border : 2px solid : black;
+}
+.container{
+	color: black;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 70px;
+  z-index: 99;
+  font-size: 12px;
+  border: 2px solid pink;
+  outline: none;
+  background-color: white;
+  color: gray;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 8px;
+box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+transition-duration: 0.4s;
+}
+
+#myBtn:hover {
+  background-color: pink;
+  border: 2px solid pink
+}
+
+.column {
+  float: left;
+  width: 25%;
+  color: black;
+  }
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.fa {
+  font-size: 10px;
+}
+
+.checked {
+  color: orange;
+}
+
+.footer {
+  padding: 80px;
+  color: black;
+  font-size: 12px;
+}
+
+.btn-group {
+
+}
+
+
 </style>
  <nav class="navbar navbar-default">
-  <div class="navbar-text" >Free Domestic Standard Shipping</p>
-	  </nav>
+  <div class="navbar-text">Free Domestic Standard Shipping</p>
+  	   </nav>
 	  
-   <nav class="navbar navbar-default">
+   <nav class="navbar-default">
     <form class="navbar-form navbar-left" action="/action_page.php">
       <div class="form-group">
         <input type="text" class="form-control" placeholder="Search">
+        <button type="submit"><i class="glyphicon glyphicon-search" style="color: black"></i></button>
       </div>
-    <i class="glyphicon glyphicon-search"></i>
+    
     </form>
-	 <ul class= "nav navbar-nav">
-	 <li> <a href = # > <span class = image>  <img src = "soonsu.png" width="200" height="70" > </a></li>
-  </ul>
-
-	  <ul class="nav navbar-nav">
+	 <ul class= "nav navbar-nav navbar-center">
+	 <li> <a href = front.html > <span class = image>  <img src = "soonsu.png" width="200" height="100" > </a></li>
+     </ul>
+<br><br>
+	  <ul class="nav navbar-nav navbar-right">
       <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Log in 
         <span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li><a href="#">Existing account</a></li>
-          <li><a href="#">Register</a></li> 
+          <li><a href="login.html">Existing account</a></li>
+          <li><a href="login.html">Register</a></li> 
         </ul>
       </li>
+
     <ul class="nav navbar-nav navbar-right">
-	<li><a href="#"><span class=image><img src="cart.png" style= "width : 10%" >> </a></li>
-	</ul>
+	<li><a href="#"><span class=image><img src="cart.png" style= "width : 10%" >> </a><br><br><br><br></li>
+
+			</ul>
+
 </nav> 
 <nav class="navbar navbar-default">
  <div class="container-fluid">
-  <ul class="nav navbar-nav">
-      <li><a href="#">New</a></li>
-      <li><a href="#">Best Sellers</a></li>
+  <ul class="nav navbar-nav navbar-center">
+      <li><a href="new product.html">New</a></li>
+      <li><a href="new product.html">Best</a></li>
 	  <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Fruit Pigmented Makeup
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tutti Frutti
         <span class="caret"></span></a>
         <ul class="dropdown-menu">
           <li><a href="#">Face</a></li>
@@ -195,41 +292,68 @@ border : 2px solid : black;
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">About 
         <span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li><a href="#">Company Info</a></li>
-          <li><a href="#">Management Team</a></li> 
+          <li><a href="companyonly.html">Company Info</a></li>
+          <li><a href="management.html">Management Team</a></li> 
           <li><a href="#">Shops</a></li> 
         </ul>
       </li>
 
     </ul>
+	</nav>
   </div>
+
 
 </head>
 <body>
+
   <div>
   <ul class="breadcrumb">
-    <li><a href="#">Fruit Pigmented Makeup</a></li>
+    <li><a href="#">Tutti Frutti</a></li>
   <li><a href="lip&eyes.html">Lip & Eyes</a></li>
   <li class="active">SoonSu Signature Liquid Lip Velvet</li> 
 </ul> 
   </div>
 
-<div class="col-sm-5"> 
-<img src="lipstick.jpg" alt="Lipstick" width="530" height="550"> </div>
-<div class="col-sm-5"> 
-</div>
-<div class="container-fluid bg-1 text-center">
+  <div class="container-fluid">
+	<div class="row">
+		<div class="col-md-6">
+		<img src="lipstick.jpg" alt="Lipstick" width="530" height="550">
+		</div>
+		<div class="col-md-6">
+			<div class="row">
+				<div class="col-md-12">
+				<div class="container-fluid bg-1 text-center">
  <h1>SoonSu Signature Liquid Lip Velvet</h1>
+ <br>
 <p>Super moisturizing lipstick made with pomegranate oil 
 and shea butter to keep lips soft and supple. Colored with 
 antioxidant-rich fruit pigments</p>
 </div>
-<div class="container-fluid bg-2 text-center">
-$32.00
+
+				</div>
+			</div>
+			<br> 
+			
+			<div class="row">
+				<div class="col-md-12">
+				
+				<div class="container-fluid bg-2 text-center">
+<h1> $32.00 </h1>
 </div>
+<br>
+
 <div class="container-fluid bg-3 text-center"> <p> SELECT A COLOR : </p>
 </div>
-<div class="grid-container">
+
+				
+				
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-md-12">
+				
+				<div class="grid-container">
 <div class="grid-item">
 <img src= "lipcolor1.png"width="100" height="80">
 </div>
@@ -243,41 +367,289 @@ $32.00
 <img src= "lipcolor4.png" width="100" height="80">
 </div>
 </div>
-<div class="container-fluid bg-4 text-center">
-<div class="btn-group">
-  <button type="button" class="btn btn-primary">Add to Cart</button>
-  <button type="button" class="btn btn-primary">Buy Now</button>
-</div> 
-</div>
 
-<div>
-<div class="container-fluid bg-5 text-center">
-<h1>Product Details</h1>
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-md-12">
+			<center>	<div class="btn-group" style="padding-left:50">
+ <button type="button" class="btn btn-primary">Add to Cart</button>
+  <button type="button" class="btn btn-primary">Buy Now</button>
+</div> </center>
+
+				
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+ 
+ <div class="container-fluid text-center bg-8">
+	<div class="row">
+		<div class="col-md-12">
+		<h1>Product Details</h1>
 <p>Anti-aging, super moisturizing lipstick concentrated with pomegranate oil to keep lips super soft and youthful. Colored from antioxidant and vitamin-packed fruit pigments like plum, raspberry, and grape for a versatile range of high pigment shades. Cocoa and shea butters 
 give lips a nourished, satin finish and vibrant color that lasts 
 all day long.</p>
-<img src="detail.png" width="900" height = "500">
-<img src= "detail2.png" width="700" height= "300">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+		<img src="detail.png" width="900" height = "500">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+		<img src= "detail2.png" width="700" height= "300">
+		</div>
+	</div>
 </div>
+ 
 
-<div class="container-fluid bg-6 text-center">
+
+<div class="container-fluid bg-8 text-center">
 <h1> You may also like </h1>
-<img src = "suggestion.png" width = "1000" height = "350">
+<!-- Image Map Generated by http://www.image-map.net/ -->
+<img src="suggestion.png" usemap="#image-map">
+
+<map name="image-map">
+    <area title="LIPSTICK" href="" shape="rect" coords="35,13,247,314" target="_blank" alt="LIPSTICK">
+    <area title="PALETTE" href="" shape="rect" coords="293,12,548,309" target="_blank" alt="PALETTE">
+    <area title="LIP Glaze" href="" shape="rect" coords="587,11,832,307" target="" alt="LIP Glaze">
+    <area title="Eye Shadow " href="" shape="rect" coords="876,19,1123,305" target="" alt="Eye Shadow ">
+</map>
 </div>
 
 
-<div class="btn-group" >
+  <center> <div class="btn-group" style="padding-left:200" >
 <button class="button button1">Choose color</button>
 <button class="button button2">Choose color</button>
 <button class="button button3">Choose color</button>
 <button class="button button4">Choose color</button>
-</div>
-<div class="container-fluid bg-6 text-center">
-<h1> REVIEWS </h1>
-</div>
-<div class = "container-fluid bg-7 text-center"> 
-<img src="rank.png" > 
+</div> </center>
 
+<div class="container-fluid bg-10">
+	<div class="row">
+		<div class="col-md-12">
+		<h1> REVIEWS </h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+		<div class = "container-fluid bg-7 text-center"> 
+<!-- Image Map Generated by http://www.image-map.net/ -->
+<img src="rank.png" usemap="#image-map">
+
+<map name="image-map">
+    <area title="1" href="" shape="rect" coords="470,27,540,77" target="_blank" alt="1">
+    <area title="2" href="" shape="rect" coords="546,23,614,73" target="" alt="2">
+    <area title="" href="" shape="rect" coords="619,25,687,73" target="" alt="">
+    <area title="" href="" shape="rect" coords="693,25,759,76" target="" alt="">
+    <area title="" href="" shape="rect" coords="471,83,541,135" target="" alt="">
+    <area title="" href="" shape="rect" coords="546,86,612,133" target="" alt="">
+    <area title="" href="" shape="rect" coords="619,83,689,132" target="" alt="">
+    <area title="" href="" shape="rect" coords="696,83,759,136" target="" alt="">
+</map>
+</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="tabbable" id="tabs-30319">
+				<ul class="nav nav-tabs">
+					<li class="nav-item">
+						<a class="nav-link" href="#tab1" data-toggle="tab">CUSTOMER REVIEWS</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active show" href="#tab2" data-toggle="tab">QUESTIONS AND ANSWERS</a>
+					</li>
+				</ul>
+				<div class="tab-content">
+					<div class="tab-pane active" id="panel-509689">
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-6" style = "text-align : center">
+		<img src="review1.png" width = "250" height = " 180">
+		</div>
+		<div class="col-md-6">
+			<div class="row">
+				<div class="col-md-12" style= " padding-bottom : 10px">
+				Lola
+From RSM CA
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12" style= " padding-bottom : 10px">
+				This was my very first Bobbi Brown product. The Color was exactly as pictured online, a beautiful shade. However, there is no staying power at all, think very expensive lip balm. Not impressed and very disappointed
+				</div>
+			</div>
+					<div class="row">
+				<div class="col-md-12" style= " padding-bottom : 10px">
+				<img src = "star.png">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6" style = "text-align : center">
+		
+		<img src="review2.png" width = "250" height = " 180" >
+		</div>
+		<div class="col-md-6">
+			<div class="row">
+				<div class="col-md-12" style= " padding-bottom : 10px">
+				chs74
+From Richmond, VA
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12" style= " padding-bottom : 10px">
+				I adore the Luxe Lip Color lipstick in Pale Mauve. It's a beautiful, creamy shade that lasts well past breakfast, lunch, and lots of water in between. I wear the foundation shade Porcelain, and cool toned lipsticks look the best on me. I have light green eyes, and medium brown hair. This shade is very complimentary to my coloring, and receive lots of compliments whenever I wear it.
+				</div>
+			</div>
+					<div class="row">
+				<div class="col-md-12" style= " padding-bottom : 10px">
+					<img src = "star.png">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6" style = "text-align : center" >
+		
+		<img src="review3.png" width = "250" height = " 180">
+		</div>
+		<div class="col-md-6">
+			<div class="row">
+				<div class="col-md-12" style= " padding-bottom : 10px">
+				Michelle
+From New York, NY
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12" style= " padding-bottom : 10px">
+				My friend bought me this Christmas special that includes various shades of this formula. I'm obsessed with it and use it every day. For work I love natural rose and feel so polished wearing it. And this formula sits so nicely on the lips. It doesn't dry out, runs on so smooth, doesn't smear easily, and lasts for hours. Like 10/10 recommend
+				</div>
+			</div>
+					<div class="row">
+				<div class="col-md-12" style= " padding-bottom : 10px">
+					<img src = "star.png">
+				</div>
+			</div>
+					<nav>
+				<ul class="pagination">
+					<li class="page-item">
+						<a class="page-link" href="#">Previous</a>
+					</li>
+					<li class="page-item">
+						<a class="page-link" href="#">1</a>
+					</li>
+					<li class="page-item">
+						<a class="page-link" href="#">2</a>
+					</li>
+					<li class="page-item">
+						<a class="page-link" href="#">3</a>
+					</li>
+					<li class="page-item">
+						<a class="page-link" href="#">4</a>
+					</li>
+					<li class="page-item">
+						<a class="page-link" href="#">5</a>
+					</li>
+					<li class="page-item">
+						<a class="page-link" href="#">Next</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+					</div>
+					<div class="tab-pane" id="tab2">
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-6">
+		Asked by Ann
+5 months ago
+		</div>
+		<div class="col-md-6">
+			<div class="row">
+				<div class="col-md-12" style= " padding-bottom : 10px">
+				Asked by Ann
+5 months ago
+				</div>
+			</div>
+					<div class="row">
+				<div class="col-md-12" style= " padding-bottom : 10px">
+				Bobbi Brown Artist - Lisa
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12" style= " padding-bottom : 10px">
+				Thanks for asking, Ann. We suggest trying the Pink Nude (which offers a similar hue, that's just a tad lighter than Sandwash Tulle) or Uber Pink (offering a similar look that's a bit darker in comparison). We're sure you'll enjoy the comfortable feel of this luxurious formula. 
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+		Asked by Ahsira
+6 months ago
+		</div>
+		<div class="col-md-6">
+			<div class="row">
+				<div class="col-md-12" style= " padding-bottom : 10px">
+				
+I can't find Mod anywhere. Is is discontinued? What is the closest to Mod?
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12" style= " padding-bottom : 10px">
+				Bobbi Brown Artist - Lisa
+				</div>
+			</div>
+					<div class="row" style = "font-size : 15px" >
+					We appreciate you reaching out about Mod Luxe Lip Color, Ahsira. This shade has been phased out of our line, but we think you'll enjoy our Salmon Lip Color for a similar stunning hue. Our Nougat Lip Gloss also offers a similar look in a gloss formula for wear on its own or over Salmon. 
+				<div class="col-md-12" style= " padding-bottom : 10px">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+		Asked by Ms. Robin
+7 months ago
+		</div>
+		<div class="col-md-6">
+			<div class="row">
+				<div class="col-md-12"  style= " padding-bottom : 10px">
+				
+I used Black Plum in both the sheer lip stick and then the Nourishing Lip Colour. Does Luxe have a colour similar to Black Plum?
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12" style= " padding-bottom : 10px">
+				Bobbi Brown Artist - Lisa
+				</div>
+			</div>
+					<div class="row">
+				<div class="col-md-12" style= " padding-bottom : 10px">
+				Thanks for your question on our Luxe Lip Color. We think you'll love the Plum Brandy shade for a similar look, Robin. Also, take a look at the new Daring shade in our popular Crushed Lip Color for another pretty option. 
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 
 
