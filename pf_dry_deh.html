@@ -15,14 +15,28 @@
   color: black;
 }
 .bg-2{
-background-color : white;
-color : black;
+padding-top: 30px;
+padding-bottom: 30px;
+padding-right: 30px;
+padding-left: 30px;
+color: gray;
+background-color: #EFE7DA;
+border-style: mild;
+ border-width: 1px;
+  font-size: 11px;
+  border-radius: 3;
+  letter-spacing: 2px;
+      z-index: 888s;
+      width: 100%;
 }
+
+
 .bg-3{
 background-color : #f5f6f7;
 
 }.bg-4{
 background-color : white;
+color : white;
 }
 
 
@@ -229,9 +243,7 @@ transition-duration: 0.4s;
 
     <ul class="nav navbar-nav navbar-right">
 	<li><a href="#"><span class=image><img src="cart.png" style= "width : 10%" >> </a><br><br><br><br></li>
-
 			</ul>
-
 </nav> 
 
 <nav class="navbar navbar-default">
@@ -287,27 +299,119 @@ transition-duration: 0.4s;
     </ul>
 	</nav>
   </div>
-
-
 </head>
 
+
+
 <body>
+
 <div class="container-fluid bg-3" style = "padding: 0px 50px 0px 50px;">
 	<div class="row">
 		<div class="col-md-8" align="center">
 		  <img src="lip front page.JPG" class="img-responsive" style="display:inline" alt="lip front page" width="80%" >
 		</div>
 		<div class="col-md-4" align="center-left">
-		  <li><li><li><h2 style="color:rgb(155, 143, 140);">Lip & Eyes</h2>
+		  <li><li><li><h2 style="color:rgb(155, 143, 140);">Product Finder</h2>
 		</div>
 	</div>
 </div>
 
+
+ <div class="container-fluid bg-2 text-center">
+
+<div class="container" align="center">
+  <h3>Find my perfect</h3>
+  <h2>Skin Care Routine</h2>
+  <br>
+<div class="col-md-3"></div>
+
+<div class="col-md-3">
+	<p align="center">My skin type is</p> 
+	<div class="dropdown" align="center">
+		<button class="btn btn-default dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">Dry
+		<span class="caret"></span></button>
+			<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+			  <li role="presentation"><a role="menuitem" tabindex="1" href="pf_dry.html">Dry</a></li>
+			  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Oily</a></li>
+			  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Normal</a></li>
+			  <li role="presentation" class="divider"></li>
+			  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Combo</a></li>    
+			</ul>
+	</div>
+</div>
+
+<div class="col-md-3">
+ <p align="center">My top skin concern is</p>
+  <div class="dropdown" align="center">
+		<button class="btn btn-default dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">Dehydration
+		<span class="caret"></span></button>
+			<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+			  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Acne</a></li>
+			  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Aging</a></li>
+			  <li role="presentation"><a role="menuitem" tabindex="-1" href="pf_dry_deh.html">Dehydration</a></li>
+			  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Pores</a></li>    
+			  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Redness</a></li>    
+			  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Sensitivity</a></li>    
+			  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Brightening</a></li>  
+			  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Dark Age/Sun spots</a></li>    
+			</ul>
+  </div>
+</div>
+		<div class="col-md-3"></div>
+</div>
+</div>
+
+<div class="container-fluid bg-1 text-center">
+  <br>
+  <h3>Step 1 : Cleanser</h3>
 <div align="center" style = "padding: 40px 150px 40px 150px;  font-size:0.75em;" class="container-fluid bg-4" >
 	<div class="row">
 		<div class="col-md-3">
-			<a href="product1.html"><img src="lip1.jpg" alt="lip1" width="70%"></a>
-			<li><a href="product1.html" style="color:rgb(155, 143, 140);">Soonsoo signature liquid lip velvet</a>
+		</div>
+		<div class="col-md-3">
+			<a href=""><img src="pf1.jpg" alt="pf1" width="70%"></a>
+			<li><a href="" style="color:rgb(155, 143, 140);">elf daily face cleaner</a>
+			<p style="color:rgb(35, 33, 33);">$36.00</p>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star"></span>
+			<div class="btn-group-sm">
+				<button type="button" class="btn" style="color:rgb(155, 143, 140);">Add to Cart</button>
+				<button type="button" class="btn btn-default" onclick = "location.href = '#' ">Buy Now</button>
+			</div> 
+		</div>
+		<div class="col-md-3">
+			<a href=""><img src="pf2.jpg" alt="pf2" width="70%"></a>
+			<li><a href="" style="color:rgb(155, 143, 140);">Simply cleaner</a>
+			<p style="color:rgb(35, 33, 33);">$27.50</p>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star"></span>
+			<div class="btn-group-sm">
+				<button type="button" class="btn" style="color:rgb(155, 143, 140);">Add to Cart</button>
+				<button type="button" class="btn btn-default" onclick = "location.href = '#' ">Buy Now</button>
+			</div> 
+		</div>
+		<div class="col-md-3">
+		</div>
+	</div>
+</div>
+
+
+<div class="container-fluid bg-1 text-center">
+  <br>
+  <h3>Step 2 : Scrub</h3>
+<div align="center" style = "padding: 40px 150px 40px 150px;  font-size:0.75em;" class="container-fluid bg-4" >
+	<div class="row">
+		<div class="col-md-3">
+		</div>
+		<div class="col-md-3">
+			<a href=""><img src="pf3.jpg" alt="pf3" width="40.5%"></a>
+			<li><a href="" style="color:rgb(155, 143, 140);">Gentle walnut scrub</a>
 			<p style="color:rgb(35, 33, 33);">$30.00</p>
 				<span class="fa fa-star checked"></span>
 				<span class="fa fa-star checked"></span>
@@ -316,13 +420,13 @@ transition-duration: 0.4s;
 				<span class="fa fa-star checked"></span>
 			<div class="btn-group-sm">
 				<button type="button" class="btn" style="color:rgb(155, 143, 140);">Add to Cart</button>
-				<button type="button" class="btn btn-default" onclick = "location.href = 'product1.html' ">Buy Now</button>
+				<button type="button" class="btn btn-default" onclick = "location.href = '#' ">Buy Now</button>
 			</div> 
 		</div>
 		<div class="col-md-3">
-			<a href=""><img src="lip2.jpg" alt="lip2" width="70%"></a>
-			<li><a href="www.google.com" style="color:rgb(155, 143, 140);">Fruit-pigmented oil anti-aging lipstick</a>
-			<p style="color:rgb(35, 33, 33);">$22.00</p>
+			<a href=""><img src="pf4.jpg" alt="pf4" width="70%"></a>
+			<li><a href="" style="color:rgb(155, 143, 140);">Activated charcoal scrub</a>
+			<p style="color:rgb(35, 33, 33);">$59.00</p>
 				<span class="fa fa-star checked"></span>
 				<span class="fa fa-star checked"></span>
 				<span class="fa fa-star checked"></span>
@@ -334,8 +438,34 @@ transition-duration: 0.4s;
 			</div> 
 		</div>
 		<div class="col-md-3">
-			<a href=""><img src="lip3.jpg" alt="lip3" width="70%"></a>
-			<li><a href="www.google.com" style="color:rgb(155, 143, 140);">Fruit-pigmented honey red lipstick</a>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid bg-1 text-center">
+  <br>
+  <h3>Step 3 : Toner</h3>
+<div align="center" style = "padding: 40px 150px 40px 150px;  font-size:0.75em;" class="container-fluid bg-4" >
+	<div class="row">
+		<div class="col-md-3">
+		</div>
+		<div class="col-md-3">
+			<a href=""><img src="pf5.jpg" alt="pf5" width="70%"></a>
+			<li><a href="" style="color:rgb(155, 143, 140);">Alcohol free toner</a>
+			<p style="color:rgb(35, 33, 33);">$35.00</p>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star"></span>
+			<div class="btn-group-sm">
+				<button type="button" class="btn" style="color:rgb(155, 143, 140);">Add to Cart</button>
+				<button type="button" class="btn btn-default" onclick = "location.href = '#' ">Buy Now</button>
+			</div> 
+		</div>
+		<div class="col-md-3">
+			<a href=""><img src="pf6.jpg" alt="pf6" width="70%"></a>
+			<li><a href="" style="color:rgb(155, 143, 140);">Refreshing Toner</a>
 			<p style="color:rgb(35, 33, 33);">$27.50</p>
 				<span class="fa fa-star checked"></span>
 				<span class="fa fa-star checked"></span>
@@ -348,107 +478,26 @@ transition-duration: 0.4s;
 			</div> 
 		</div>
 		<div class="col-md-3">
-			<a href=""><img src="lip4.jpg" alt="lip4" width="70%"></a>
-			<li><a href="www.google.com" style="color:rgb(155, 143, 140);">Fruit-pigmented hot pink Lip caramel</a>
-			<p style="color:rgb(35, 33, 33);">$30.50</p>
-				<span class="fa fa-star checked"></span>
-				<span class="fa fa-star checked"></span>
-				<span class="fa fa-star checked"></span>
-				<span class="fa fa-star"></span>
-				<span class="fa fa-star"></span>
-			<div class="btn-group-sm">
-				<button type="button" class="btn" style="color:rgb(155, 143, 140);">Add to Cart</button>
-				<button type="button" class="btn btn-default" onclick = "location.href = '#' ">Buy Now</button>
-			</div> 
 		</div>
 	</div>
 </div>
 
-<div align="center" style = "padding: 40px 150px 40px 150px; font-size:0.75em; " class="container-fluid bg-4" >
-	<div class="row">
-		<div class="col-md-3">
-			<a href=""><img src="lip5.jpg" alt="lip5" width="70%"></a>
-			<li><a href="" style="color:rgb(155, 143, 140);">hydrating creamy lipstick</a>
-			<p style="color:rgb(35, 33, 33);">$31.00</p>
-				<span class="fa fa-star checked"></span>
-				<span class="fa fa-star checked"></span>
-				<span class="fa fa-star checked"></span>
-				<span class="fa fa-star checked"></span>
-				<span class="fa fa-star"></span>
-			<div class="btn-group-sm">
-				<button type="button" class="btn" style="color:rgb(155, 143, 140);">Add to Cart</button>
-				<button type="button" class="btn btn-default" onclick = "location.href = 'product1.html' ">Buy Now</button>
-			</div> 
-		</div>
-				<div class="col-md-3">
-			<a href=""><img src="lip6.jpg" alt="lip6" width="70%"></a>
-			<li><a href="" style="color:rgb(155, 143, 140);">original rouge lipstick</a>
-			<p style="color:rgb(35, 33, 33);">$29.90</p>
-				<span class="fa fa-star checked"></span>
-				<span class="fa fa-star checked"></span>
-				<span class="fa fa-star checked"></span>
-				<span class="fa fa-star checked"></span>
-				<span class="fa fa-star checked"></span>
-			<div class="btn-group-sm">
-				<button type="button" class="btn" style="color:rgb(155, 143, 140);">Add to Cart</button>
-				<button type="button" class="btn btn-default" onclick = "location.href = 'product1.html' ">Buy Now</button>
-			</div> 
-		</div>
-		<div class="col-md-3">
-			<a href=""><img src="lip7.jpg" alt="lip7" width="70%"></a>
-			<li><a href="" style="color:rgb(155, 143, 140);">ultimate lipstic love</a>
-			<p style="color:rgb(35, 33, 33);">$32.00</p>
-				<span class="fa fa-star checked"></span>
-				<span class="fa fa-star checked"></span>
-				<span class="fa fa-star checked"></span>
-				<span class="fa fa-star checked"></span>
-				<span class="fa fa-star"></span>
-			<div class="btn-group-sm">
-				<button type="button" class="btn" style="color:rgb(155, 143, 140);">Add to Cart</button>
-				<button type="button" class="btn btn-default" onclick = "location.href = 'product1.html' ">Buy Now</button>
-			</div> 
-		</div>
-		<div class="col-md-3">
-			<a href=""><img src="lip8.jpg" alt="lip8" width="45%"></a>
-			<li><a href="" style="color:rgb(155, 143, 140);">matte cream lipstick</a>
-			<p style="color:rgb(35, 33, 33);">$25.80</p>
-				<span class="fa fa-star checked"></span>
-				<span class="fa fa-star checked"></span>
-				<span class="fa fa-star checked"></span>
-				<span class="fa fa-star checked"></span>
-				<span class="fa fa-star checked"></span>
-			<div class="btn-group-sm">
-				<button type="button" class="btn" style="color:rgb(155, 143, 140);">Add to Cart</button>
-				<button type="button" class="btn btn-default" onclick = "location.href = 'product1.html' ">Buy Now</button>
-			</div> 
-		</div>
-	</div>
-</div>
 
+<div class="container-fluid bg-1 text-center">
+  <br>
+  <h3>Step 4 : Mask</h3>
 <div align="center" style = "padding: 40px 150px 40px 150px;  font-size:0.75em;" class="container-fluid bg-4" >
 	<div class="row">
 		<div class="col-md-3">
-			<a href=""><img src="lip9.jpg" alt="lip9" width="70%"></a>
-			<li><a href="" style="color:rgb(155, 143, 140);">Everlasting liquid lipstick</a>
+		</div>
+		<div class="col-md-3">
+			<a href=""><img src="pf7.jpg" alt="pf7" width="70%"></a>
+			<li><a href="" style="color:rgb(155, 143, 140);">Deepskin mask</a>
 			<p style="color:rgb(35, 33, 33);">$30.00</p>
 				<span class="fa fa-star checked"></span>
 				<span class="fa fa-star checked"></span>
 				<span class="fa fa-star checked"></span>
 				<span class="fa fa-star checked"></span>
-				<span class="fa fa-star checked"></span>
-			<div class="btn-group-sm">
-				<button type="button" class="btn" style="color:rgb(155, 143, 140);">Add to Cart</button>
-				<button type="button" class="btn btn-default" onclick = "location.href = 'product1.html' ">Buy Now</button>
-			</div> 
-		</div>
-		<div class="col-md-3">
-			<a href=""><img src="lip10.jpg" alt="lip10" width="70%"></a>
-			<li><a href="www.google.com" style="color:rgb(155, 143, 140);">Cream lip stain</a>
-			<p style="color:rgb(35, 33, 33);">$22.00</p>
-				<span class="fa fa-star checked"></span>
-				<span class="fa fa-star checked"></span>
-				<span class="fa fa-star checked"></span>
-				<span class="fa fa-star checked"></span>
 				<span class="fa fa-star"></span>
 			<div class="btn-group-sm">
 				<button type="button" class="btn" style="color:rgb(155, 143, 140);">Add to Cart</button>
@@ -456,41 +505,107 @@ transition-duration: 0.4s;
 			</div> 
 		</div>
 		<div class="col-md-3">
-			<a href=""><img src="lip11.jpg" alt="lip11" width="70%"></a>
-			<li><a href="www.google.com" style="color:rgb(155, 143, 140);">Mattemoiselles plush duo</a>
-			<p style="color:rgb(35, 33, 33);">$27.50</p>
+			<a href=""><img src="pf8.jpg" alt="pf8" width="70%"></a>
+			<li><a href="" style="color:rgb(155, 143, 140);">Jellyme mask pack</a>
+			<p style="color:rgb(35, 33, 33);">$24.50</p>
 				<span class="fa fa-star checked"></span>
 				<span class="fa fa-star checked"></span>
 				<span class="fa fa-star checked"></span>
-				<span class="fa fa-star"></span>
-				<span class="fa fa-star"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
 			<div class="btn-group-sm">
 				<button type="button" class="btn" style="color:rgb(155, 143, 140);">Add to Cart</button>
 				<button type="button" class="btn btn-default" onclick = "location.href = '#' ">Buy Now</button>
 			</div> 
 		</div>
 		<div class="col-md-3">
-			<a href=""><img src="lip12.jpg" alt="lip12" width="70%"></a>
-			<li><a href="www.google.com" style="color:rgb(155, 143, 140);">Poutsicle juicy Satin</a>
-			<p style="color:rgb(35, 33, 33);">$27.50</p>
-				<span class="fa fa-star checked"></span>
-				<span class="fa fa-star checked"></span>
-				<span class="fa fa-star checked"></span>
-				<span class="fa fa-star"></span>
-				<span class="fa fa-star"></span>
-			<div class="btn-group-sm">
-				<button type="button" class="btn" style="color:rgb(155, 143, 140);">Add to Cart</button>
-				<button type="button" class="btn btn-default" onclick = "location.href = '#' ">Buy Now</button>
-			</div> 
 		</div>
 	</div>
 </div>
 
 
-
-<div align="center">
-<li><li><a>-</a> <a href="lip&eyes.html" style="color:rgb(55, 43, 40);">1</a>  <a href="lip&eyes_2.html"style="color:rgb(55, 43, 40);">2</a> <a>-</a>
+<div class="container-fluid bg-1 text-center">
+  <br>
+  <h3>Step 5 : Serum</h3>
+<div align="center" style = "padding: 40px 150px 40px 150px;  font-size:0.75em;" class="container-fluid bg-4" >
+	<div class="row">
+		<div class="col-md-3">
+		</div>
+		<div class="col-md-3">
+			<a href=""><img src="pf9.jpg" alt="pf9" width="70%"></a>
+			<li><a href="" style="color:rgb(155, 143, 140);">sahajan face serum</a>
+			<p style="color:rgb(35, 33, 33);">$36.00</p>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star"></span>
+			<div class="btn-group-sm">
+				<button type="button" class="btn" style="color:rgb(155, 143, 140);">Add to Cart</button>
+				<button type="button" class="btn btn-default" onclick = "location.href = '#' ">Buy Now</button>
+			</div> 
+		</div>
+		<div class="col-md-3">
+			<a href=""><img src="pf10.jpg" alt="pf10" width="70%"></a>
+			<li><a href="" style="color:rgb(155, 143, 140);">revolution serum</a>
+			<p style="color:rgb(35, 33, 33);">$57.50</p>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star"></span>
+				<span class="fa fa-star"></span>
+			<div class="btn-group-sm">
+				<button type="button" class="btn" style="color:rgb(155, 143, 140);">Add to Cart</button>
+				<button type="button" class="btn btn-default" onclick = "location.href = '#' ">Buy Now</button>
+			</div> 
+		</div>
+		<div class="col-md-3">
+		</div>
+	</div>
 </div>
+
+
+<div class="container-fluid bg-1 text-center">
+  <br>
+  <h3>Step 6 : Moisturizer</h3>
+<div align="center" style = "padding: 40px 150px 40px 150px;  font-size:0.75em;" class="container-fluid bg-4" >
+	<div class="row">
+		<div class="col-md-3">
+		</div>
+		<div class="col-md-3">
+			<a href=""><img src="pf11.jpg" alt="pf11" width="65%"></a>
+			<li><a href="" style="color:rgb(155, 143, 140);">Double repair face moisturizer</a>
+			<p style="color:rgb(35, 33, 33);">$38.00</p>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+			<div class="btn-group-sm">
+				<button type="button" class="btn" style="color:rgb(155, 143, 140);">Add to Cart</button>
+				<button type="button" class="btn btn-default" onclick = "location.href = '#' ">Buy Now</button>
+			</div> 
+		</div>
+		<div class="col-md-3">
+			<a href=""><img src="pf12.jpg" alt="pf12" width="70%"></a>
+			<li><a href="" style="color:rgb(155, 143, 140);">Face moisturizing lotion</a>
+			<p style="color:rgb(35, 33, 33);">$28.50</p>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star"></span>
+				<span class="fa fa-star"></span>
+			<div class="btn-group-sm">
+				<button type="button" class="btn" style="color:rgb(155, 143, 140);">Add to Cart</button>
+				<button type="button" class="btn btn-default" onclick = "location.href = '#' ">Buy Now</button>
+			</div> 
+		</div>
+		<div class="col-md-3">
+		</div>
+	</div>
+</div>
+
+
 
 <!-- FOOTER -->
 <div class="footer" align=center>
@@ -527,8 +642,6 @@ transition-duration: 0.4s;
 
 <h10>If you are using a screen reader and are having problems using this website, <br> please call +082 (02) 123-4567 for assistance.<br></h10>
 
-</div>    
-
+</div>
 </body>
-
 </html>
